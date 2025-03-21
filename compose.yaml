@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=ms-vendas'
+      - 'MYSQL_PASSWORD=msvendas'
+      - 'MYSQL_ROOT_PASSWORD=msvendas'
+      - 'MYSQL_USER=lvsolution'
+    ports:
+      - '3306'
