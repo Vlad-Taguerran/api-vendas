@@ -84,8 +84,7 @@ private UserRepository userRepository;
     }
 
     public List<CustomerStatusDTO> loadCustomersStatus(Users user) {
-       List<CustomerStatusDTO> customerStatusDTOS  = customersRepository.countStatusByUser(user.getId());
 
-       return customerStatusDTOS;
+        return customersRepository.countStatusByUser(user.getId());
     }
 }

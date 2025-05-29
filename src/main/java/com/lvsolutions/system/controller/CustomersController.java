@@ -47,7 +47,6 @@ public class CustomersController {
     public ResponseEntity<List<CustomerStatusDTO>> loadCustomersStatus(@AuthenticationPrincipal Users user){
        List<CustomerStatusDTO> customerStatus = customersService.loadCustomersStatus(user);
 
-       System.out.println(customerStatus);
        return ResponseEntity.ok(customerStatus);
     }
     @DeleteMapping
